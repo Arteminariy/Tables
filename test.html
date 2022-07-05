@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .my {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            position: absolute;
+            z-index: -1;
+        }
+        .label {
+            width: 180px;
+            height: 50px;
+            border-radius: 4px;
+            text-align: center;
+            cursor: pointer;
+            display: block;
+            font: 14px/50px Tahoma;
+            transition: all 0.18s ease-in-out;
+            border: 1px solid #333;
+            color: #333;
+        }
+
+        .label:hover {
+            color: white;
+            background: #333;
+        }
+    </style>
+    <label for="myfile" class="label">Выберите файлы</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple>  
+    <script>
+        console.log(document.getElementById("myfile").value)
+    </script>
+</body>
+</html>

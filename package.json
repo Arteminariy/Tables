@@ -1,0 +1,24 @@
+{
+  "name": "tables",
+  "version": "1.0.0",
+  "description": "site for sum Excel tables",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "tables"
+  ],
+  "author": "Artem Pravdepodobniy",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  },
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
